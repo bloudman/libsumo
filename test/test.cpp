@@ -36,7 +36,7 @@ int main(void)
 	sumo::Control c(new ImageProcessing);
 
 	if (!c.open())
-		return EXIT_FAILURE;
+		return 0;
 
 #if 0
 	for (int i = 0; i < 4; i++) {
@@ -56,5 +56,5 @@ int main(void)
 
 	c.close();
 
-	return EXIT_SUCCESS;
+	return 1;
 }

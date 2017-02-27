@@ -41,13 +41,15 @@
 
 #include "protocol.h"
 
+#include <string>
 namespace sumo {
 
 class ControlIn : public MessageQueue, public StoppableThread
 {
 	Control *_dp;
 
-	std::string _date, _time;
+	std::string _date;
+	std::string _time;
 	bool _info_done;
 	uint8_t _battery;
 

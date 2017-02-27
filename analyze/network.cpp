@@ -22,7 +22,6 @@
 #include <net/ethernet.h>
 
 #include <netinet/if_ether.h>
-#include <netinet/ether.h>
 
 #include <cstring>
 #include <iostream>
@@ -331,4 +330,3 @@ void networkSnooperPcap::stop()
 			cout << "PCAP stats: received: " << ps.ps_recv << ", dropped: " << ps.ps_drop << endl;
 	}
 }
-
