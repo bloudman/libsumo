@@ -1,3 +1,26 @@
+FORK FROM ORIGINAL REPO FROM iloreen
+-Just added mac osx compatibility
+
+On a mac you will need homebrew and install the following packages:
+
+qt4:
+brew tap cartr/qt4
+brew tap-pin cartr/qt4
+brew install qt
+
+libcap:
+brew tap homebrew/dupes
+brew install libpcap
+brew install tcpreplay
+
+mplayer:
+brew install mplayer
+
+cmake:
+brew install cmake
+
+And everything should work on mac ! :) 
+
 What is this?
 -------------
 
